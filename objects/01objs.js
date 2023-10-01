@@ -11,15 +11,15 @@ const obj1 = {
     email:"rohit@chatgpt.com"
 }
 
-// // accessing obj
+// accessing obj
 
-// console.log(obj1);
-// console.log(obj1.name);
-// console.log(obj1["name"]);
+console.log(obj1);
+console.log(obj1.name);
+console.log(obj1["name"]);
 
 // using symbol as a key in object
 
-const full_name = Symbole("key1");
+const full_name = Symbol("key1");
 const obj2 = {
     name:"Rohit",
     [full_name]:"Rohit singh",
@@ -28,4 +28,4 @@ const obj2 = {
     email:"rohit@chatgpt.com"
 }
 
-console.log(typeof obj2[full_name]);
+console.log(obj2[full_name]);
