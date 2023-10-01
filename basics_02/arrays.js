@@ -1,4 +1,4 @@
-// 1: factory method to create array
+// 1: literal method to create array
 
 const myArr1 = [1,2,3,4,5,"Siddhant",true];
 console.log(myArr1);
