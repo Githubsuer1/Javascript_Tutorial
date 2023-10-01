@@ -1,0 +1,1 @@
+console.log("Hello and welcome to the javascript turorial.")
