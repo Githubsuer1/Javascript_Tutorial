@@ -1,10 +1,11 @@
 body{
     background-color: #212121;
-    color:white;
+    color:orange;
     display: flex;
     justify-content: center;
 }
 
+/** main container **/
 .container{
     height: 500px;
     width: 500px;
@@ -16,6 +17,7 @@ body{
     border-radius: 4px;
 }
 
+/** for circle of bulb **/
 .box1{
     height: 200px;
     width: 200px;
@@ -24,6 +26,7 @@ body{
     border-radius: 50%;
 }
 
+/** On oF Button **/ 
 .btn{
     margin-top: 25px;
     height: 32px;
