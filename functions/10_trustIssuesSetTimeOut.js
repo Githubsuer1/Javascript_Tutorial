@@ -2,14 +2,18 @@
 // it will execute only when call stack is empty because it waits in callback queue to get execute.
 
 
-console.log("start");
+console.log("start");       // it will execute in first.
 
 
 setTimeout(function mtq() {
     console.log("I will execute in last.");
-}, 5000);
+}, 5000);       // it will execute in last after ending the all execution in call stack.
 
-console.log("end");
+
+
+console.log("end");         // it will execute in second.
+
+
 
 let startDate = new Date().getTime();
 let endDate = startDate;
@@ -17,5 +21,5 @@ let endDate = startDate;
 while(endDate < startDate + 10000){
     endDate = new Date().getTime();
 }
-console.log("while expires");
+console.log("while expires");       // it will execute in third.
 
