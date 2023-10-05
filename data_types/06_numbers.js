@@ -28,3 +28,8 @@ console.log(Math.min(7,8,9,1,6));   // always gives min value
 console.log(Math.random());         // gives a random value between 0 to 1
 console.log(Math.random() * 10 + 1);
 console.log(Math.floor(Math.random() * 10) + 1);
+
+let max = 20;
+let min = 10;
+
+console.log(Math.floor(Math.random() * (max - min + 1) )+ min);
