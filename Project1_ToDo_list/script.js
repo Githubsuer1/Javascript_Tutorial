@@ -17,9 +17,10 @@ btnAdd.addEventListener('click',function(){
 
         // creating new element that will go to contain list items
         let newElement = document.createElement("ul");
+        newElement.setAttribute("id","newelement");
 
         // containing the content with btns
-        newElement.innerHTML = `${inputText.value} <button id="btn2" class="btnRem">Remove</button>`;
+        newElement.innerHTML = `${inputText.value} <button id="btn3" class="btnEdit">Edit</button> <button id="btn2" class="btnRem">Remove</button> `;
 
         // the container that will contain newly created element
         let listContainer = document.querySelector(".listContainer");
@@ -38,6 +39,17 @@ btnAdd.addEventListener('click',function(){
 
             newElement.remove();   // removing task by remove method
 
+        })
+
+        let editBtn = newElement.querySelector(".btnEdit");
+
+        editBtn.addEventListener('click',function(){
+            const oldElement = document.getElementById('newelement');
+            const newUl = document.createElement('ul');
+            newUl.innerHTML = `${inputText.value} <button id="btn3" class="btnEdit">Edit</button> <button id="btn2" class="btnRem">Remove</button>`;
+            oldElement.replaceWith(newUl);
+
+            
         })
     }
 })

@@ -82,6 +82,14 @@ body{
     font-weight: bold;
 }
 
+#btn3{
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    right: 100px;
+    font-weight: bold;
+}
+
 /** for input placeholder**/
 ::placeholder{
     color: tomato;
