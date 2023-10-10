@@ -9,19 +9,38 @@
 </head>
 <body>
 
-    <div class="parent">
+    <ul class="language">
 
-        <div class="day">Monday</div>
-        <div class="day">Tuesday</div>
-        <div class="day">Wednesday</div>
-        <div class="day">Thursday</div>
-        
-    </div>
+    </ul>
+
+    <!-- create element using dom -->
+
+    <script>
+
+        function createElement(langName){
+            const li = document.createElement("li")
+            li.appendChild(document.createTextNode(langName))
+            document.querySelector('.language').appendChild(li);
+        }
+
+        createElement("python")
+        createElement("java")
+        createElement("c++")
+        createElement("ruby")
+        createElement("mogo")
+
+        // edit element using dom
+
+        const secondLang = document.querySelector("li:nth-child(2)");
+        const newli = document.createElement("li");
+        newli.textContent = "mojo";
+        secondLang.replaceWith(newli);
+    </script>
 
 
 
 
     <!-- External javascript file -->
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
